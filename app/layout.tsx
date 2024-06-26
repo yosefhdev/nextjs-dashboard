@@ -1,11 +1,16 @@
+import '@/app/ui/global.css';
+import { spaceGrotesk } from '@/app/ui/fonts';
+
 export default function RootLayout({
-  children,
+	children,
 }: {
-  children: React.ReactNode;
+	children: React.ReactNode;
 }) {
-  return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
-  );
+	return (
+		<html lang="es">
+			<body className={`${spaceGrotesk.className} antialiased`}>
+				{children}
+			</body>
+		</html>
+	);
 }
